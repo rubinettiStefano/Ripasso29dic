@@ -1,0 +1,10 @@
+<div style="width:100%;height:100%;position:relative"></div>
+<h1>MI DAI 20 EURO?</h1>
+<div class="pos" [ngStyle]="{'top':'10%','left':'10%','width':2*l+'px','height':l+'px'}"  style="padding:20px;display:inline-block">
+  <button [ngStyle]="{'width':2*l+'px','height':l+'px','font-size':l*0.5+'px'}">SÌ</button>
+</div>
+
+<div class="pos" *ngIf="!sforato" [ngStyle]="{'top':top+'%','left':left+'%','width':2*l+'px','height':l+'px'}" (pointerenter)="sposta($event)" style="padding:20px;display:inline-block">
+  <button [ngStyle]="{'width':2*l+'px','height':l+'px','font-size':l*0.5+'px'}">NO</button>
+</div>
+

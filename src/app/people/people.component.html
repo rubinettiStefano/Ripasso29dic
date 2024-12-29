@@ -1,0 +1,9 @@
+nome   &nbsp; &nbsp; &nbsp; &nbsp;:<input (focus)="sporca(0)" [ngStyle]="{'backgroundColor':colore[0]}" [(ngModel)]="per.name"><br/>
+cognome&nbsp;:<input (focus)="sporca(1)" [ngStyle]="{'backgroundColor':colore[1]}" [(ngModel)]="per.surname"><br/>
+eta    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :<input (focus)="sporca(2)" [ngStyle]="{'backgroundColor':colore[2]}" type="number" [(ngModel)]="per.age"><br/>
+<button (click)="salva()">SALVA</button>
+<br/><br/>
+
+<div *ngFor="let p of persons">
+  <h2 class="hoverabbile">{{p.id}} {{p.name}} {{p.surname}} anni: {{p.age}} </h2>
+</div>
